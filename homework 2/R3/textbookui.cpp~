@@ -1,0 +1,11 @@
+#include "textbookui.h"
+
+QStringList TextBookUI::prompt() {
+   QTextStream cout(stdout);
+   QTextStream cin(stdin);
+   QStringList retval(BookUI::prompt());
+   cout << "Course: " << flush;
+   retval << cin.readLine();
+   return retval;
+}
+

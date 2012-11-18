@@ -1,0 +1,11 @@
+#ifndef DVDUI_H
+#define DVDUI_H
+#include "refitemui.h"
+
+class DVDUI : public RefItemUI
+{
+public:
+    QStringList prompt();
+};
+
+#endif // DVDUI_H

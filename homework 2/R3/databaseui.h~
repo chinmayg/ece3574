@@ -1,0 +1,11 @@
+#ifndef DATABASEUI_H
+#define DATABASEUI_H
+#include "dvdui.h"
+
+class DataBaseUI : public DVDUI
+{
+public:
+    QStringList prompt();
+};
+
+#endif // DATABASEUI_H

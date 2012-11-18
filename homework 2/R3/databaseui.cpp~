@@ -1,0 +1,10 @@
+#include "databaseui.h"
+
+QStringList DataBaseUI::prompt() {
+   QTextStream cout(stdout);
+   QTextStream cin(stdin);
+   QStringList retval(DVDUI::prompt());
+   cout << "Database protocol: " << flush;
+   retval << cin.readLine();
+   return retval;
+}

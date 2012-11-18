@@ -1,0 +1,11 @@
+#ifndef REFERENCEBOOKUI_H
+#define REFERENCEBOOKUI_H
+#include "bookui.h"
+
+class ReferenceBookUI : public BookUI
+{
+public:
+    QStringList prompt();
+};
+
+#endif // REFERENCEBOOKUI_H
